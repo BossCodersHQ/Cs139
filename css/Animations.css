@@ -1,0 +1,14 @@
+@keyframes fadeup {
+    from {opacity:0;top:10em;}
+    to {opacity:1;top:0em;}
+}
+
+@keyframes fadeleft {
+    from {opacity:0;left:-20em;}
+    to {opacity:1;left:0em;}
+}
+
+@keyframes fadein{
+    from {opacity:0;}
+    to {opacity:1;}
+}
