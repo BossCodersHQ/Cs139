@@ -1,0 +1,62 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image: url("../img/Background3.jpg");
+    background-repeat:no-repeat;
+    background-color:black;
+}
+
+#logo {
+    width:8%;
+    padding:0px;
+    margin:auto;
+    display:block;
+    background-color:rgba(0,0,0,0.2);
+    border-radius:50%;
+    padding:10px;
+    box-shadow:inset 0px 0px 20px 20px rgba(0,0,0,0.4);
+    border:dashed;border-color:white;border-width:1px;
+    box-shadow:0px 0px 40px 20px rgba(0,0,0,0.7);
+}
+    
+@font-face {
+    font-family: "Customheader";
+    src: url(../font/BlendaScript.otf) format("truetype");
+}
+
+h1{
+    font-weight:lighter;
+    font-size:50px;
+    color:white;
+    margin-top:0px;
+    margin-bottom:0px;
+
+}
+
+.heading{
+    font-family:Customheader;
+    display:block;
+    margin:auto;
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content{
+    display:block;
+    margin:auto;
+    width:50%;
+    border-radius:25px;
+    text-align:center;
+    color:white;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius:40px;
+    
+}
+
+label {
+    font-family:arial;
+}
