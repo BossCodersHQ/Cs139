@@ -5,6 +5,26 @@
 <title>cs139</title>
 <link rel="stylesheet" type="text/css" href="css/Todo.css" />
 <link rel="stylesheet" type="text/css" href="css/Animations.css" />
+<script src="Jquery/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+ 
+    $("body").fadeIn(2000);
+ 
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+
 
 </head>
 <body>
@@ -83,7 +103,17 @@ function myFunction2() {
       y.style.display = "block";
    }
 }
+
+
 </script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("body").css("display", "none");
+    });
+</script>
+
 
 </body>
 </html>
