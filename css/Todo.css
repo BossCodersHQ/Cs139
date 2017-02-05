@@ -58,13 +58,24 @@ body {
 
 
 
-h1{
+h1 {
     font-weight:lighter;
     font-size:50px;
     color:white;
     margin-top:0px;
     margin-bottom:0px;
+}
 
+h2 {
+    font-family:Arial;
+    font-size: 20px;
+    display:block;
+    background-color:rgba(60, 60, 60, 00);
+    padding:10px;
+}
+
+h2:hover {
+    background-color: rgba(0,191,255, 0.7);
 }
 
 .heading{
@@ -95,9 +106,35 @@ h1{
     animation-name:fadeup;
     animation-duration:1s;
     animation-timing-function: ease-out;
-    
-
 }
+
+.bar {
+    float:left;
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+}
+
+#left.bar{
+    width:20%;
+    
+}
+#middle.bar{
+    width:60%;
+}
+#right.bar{
+    width:20%;
+}
+
+.lists{
+    width:80%;
+    margin:auto;
+    background-color:white;
+    text-align:center;
+    background-color:rgba(60, 60, 60, 0.8);
+}
+
+
 
 #signin {
     display:none;
@@ -177,6 +214,7 @@ li.menubar {
     text-align:center;
     margin:0;
     transition: background-color 0.5s;
+    float:left;
 
 }
 
