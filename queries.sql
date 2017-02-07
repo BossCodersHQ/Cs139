@@ -10,4 +10,4 @@ SELECT listItem.itemID,listItem.creation,listItem.completion,listItem.itemText f
 SELECT COUNT(*) FROM listItem WHERE listItem.listID = 1;
 /* return the number of todos user 1 has */
 SELECT COUNT(*) From listItem JOIN userList ON listItem.listID = userList.listID JOIN user ON userList.userID = user.userID WHERE user.username =  "user1";
-
+/*
