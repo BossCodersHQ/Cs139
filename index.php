@@ -28,7 +28,7 @@ $(document).ready(function() {
 <body>
 
 
-<a href="./index.html"><img alt="logo" id="logo" src="img/Logo2.png"/></a>
+<a href="./index.php"><img alt="logo" id="logo" src="img/Logo2.png"/></a>
 <br>
 
 <div class="heading">
@@ -40,7 +40,7 @@ $(document).ready(function() {
 <p class="button" onclick="myFunction2()">Sign up</p>
 
 <div id="signin" class="content" >
-<form action="Lists.html">
+<form action="Lists.php">
     <label>Username:</label>
     <input type="text"><br><br>
     <label>Password:</label>
@@ -48,11 +48,11 @@ $(document).ready(function() {
     <input type="submit" value="Log in">
 </form>
 <br>
-<p>If you've forgotten your password click <a style="text-decoration:underline" href="fgtpassword.html">here</a></p>
+<p>If you've forgotten your password click <a style="text-decoration:underline" href="fgtpassword.php">here</a></p>
 </div>    
 
 <div id="signup" class="content">
-<form action="index.html">
+<form action="index.php">
 <label>Gender: </label>
 <select name=‘Gender’>
     <option value=‘Male’>Male</option>
