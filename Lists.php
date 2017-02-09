@@ -1,9 +1,14 @@
+<?php 
+	include("scripts/loadlists.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>cs139</title>
 <link rel="stylesheet" type="text/css" href="css/Todo.css" />
+<script src="Jquery/jquery-3.1.1.js"></script>
+<script src="scripts/general.js"></script>
 </head>
 <body>
 
@@ -23,9 +28,8 @@
 <br>
 <div id ="left" class="bar">
 <div class="lists">
-  <h2>List1</h2>
-  <h2>List2</h2>
-  <h2>List3</h2>
+  <div class="listbutton" id="addList"><h2>Add new List</h2></div>
+  <input type="text" id="addListName" style="display:none; width:80%;">
 </div>
 </div>
 <div id ="middle" class="bar" style="background-color:white;color:black">ssdgdsgdsg

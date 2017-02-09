@@ -1,6 +1,4 @@
 <?php
-	db = new sqlite3();
-<?php
 class Database {
 		
 	private $database;
@@ -21,7 +19,7 @@ class Database {
 		$result = $this->database->query($query);
 		return $result;
 	}
-	
+
 	function querySingle($query) {
 		$result = $this->database->querySingle($query,true);
 		return $result;
@@ -35,8 +33,11 @@ class Database {
 		return $this->database->escapeString($string);
 	}
 	
+	function bindValue() {
+
+	}
 	private function getConnection() {
-		$conn = new SQLite3('todo.db');
+		$conn = new SQLite3(realpath(__DIR__ . '/../todo.db'));
 		return $conn;
 	}
 }
