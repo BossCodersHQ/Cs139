@@ -8,222 +8,264 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 @import url("Animations.css");
 
 body {
-    background-image: url("../img/Background3.jpg");
-    background-repeat:repeat-x;
-    background-color:black;
+	background-image: url("../img/Background3.jpg");
+	background-repeat:repeat-x;
+	background-color:black;
 }
 
 #logo {
-    width:8%;
-    padding:0px;
-    margin:auto;
-    display:block;
-    background-color:rgba(0,0,0,0.2);
-    border-radius:50%;
-    padding:10px;
-    border:dashed;border-color:white;border-width:1px;
-    box-shadow:0px 0px 40px 20px rgba(0,0,0,0.7);
+	width:8%;
+	padding:0px;
+	margin:auto;
+	display:block;
+	background-color:rgba(0,0,0,0.2);
+	border-radius:50%;
+	padding:10px;
+	border:dashed;border-color:white;border-width:1px;
+	box-shadow:0px 0px 40px 20px rgba(0,0,0,0.7);
     
-    transition: width 1s,transform 2s;
-    transition-timing-function: ease-out;
-    animation-name:fadein;
-    animation-duration:3s;
+	transition: width 1s,transform 2s;
+	transition-timing-function: ease-out;
+	animation-name:fadein;
+	animation-duration:3s;
 }
 
 #logo:hover{
 
-    width: 10%;
-    transform: rotate(360deg);
+	width: 10%;
+	transform: rotate(360deg);
 }
     
 @font-face {
-    font-family: "Customheader";
-    src: url(../font/BlendaScript.otf) format("truetype");
+	font-family: "Customheader";
+	src: url(../font/BlendaScript.otf) format("truetype");
 }
 
 
 
 h1 {
-    font-weight:lighter;
-    font-size:50px;
-    color:white;
-    margin-top:0px;
-    margin-bottom:0px;
+	font-weight:lighter;
+	font-size:50px;
+	color:white;
+	margin-top:0px;
+	margin-bottom:0px;
 }
 
 h2 {
-    font-family:Arial;
-    font-size: 20px;
-    display:block;
-    background-color:rgba(60, 60, 60, 00);
-    padding:10px;
+	font-family:Arial;
+	font-size: 20px;
+	display:block;
+	background-color:rgba(60, 60, 60, 00);
+	padding:10px;
 }
 
-h2:hover {
-    background-color: rgba(0,191,255, 0.7);
-}
+
 
 .heading{
-    font-family:Customheader;
-    display:block;
-    margin:auto;
-    position:relative;
-    text-align:center;
-/*     background-color: rgba(0, 0, 0, 0.3); */
+	font-family:Customheader;
+	display:block;
+	margin:auto;
+	position:relative;
+	text-align:center;
+/* 	background-color: rgba(0, 0, 0, 0.3); */
     
-    animation-name:fadeleft;
-    animation-duration:1s;
-    animation-timing-function: ease-out;
+	animation-name:fadeleft;
+	animation-duration:1s;
+	animation-timing-function: ease-out;
 }
 
 .content {
-    display:block;
-    margin:auto;
-    width:50%;
-    border-radius:25px;
-    text-align:center;
-    color:white;
-    padding:20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius:40px;
-    position:relative;
-    font-family:arial;
-    animation-name:fadeup;
-    animation-duration:1s;
-    animation-timing-function: ease-out;
+	display:block;
+	margin:auto;
+	width:50%;
+	border-radius:25px;
+	text-align:center;
+	color:white;
+	padding:20px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius:40px;
+	position:relative;
+	font-family:arial;
+	animation-name:fadeup;
+	animation-duration:1s;
+	animation-timing-function: ease-out;
 }
 
 .bar {
-    float:left;
-    display:inline-block;
-    margin:0px;
-    padding:0px;
+	float:left;
+	display:inline-block;
+	margin:0px;
+	padding:0px;
 }
 
+#left{
+
+}
 #left.bar{
-    width:20%;
+	width:30%;
     
 }
 #middle.bar{
-    width:60%;
-}
-#right.bar{
-    width:20%;
+	width:60%;
 }
 
+.listTitle {
+	width:60%;
+}
+
+
 .lists{
-    width:80%;
-    margin:auto;
-    background-color:white;
-    text-align:center;
-    background-color:rgba(60, 60, 60, 0.8);
+	width:80%;
+	margin:auto;
+	background-color:white;
+	text-align:center;
+	background-color:rgba(60, 60, 60, 0.8);
 }
 
 
 
 #signin {
-    display:none;
+	display:none;
 }
 #signup {
-    display:none;
+	display:none;
 }
 
 
 label {
-    font-family:arial;
-    display:block;
+	font-family:arial;
+	display:block;
 }
 
 .button {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    color:white;
-    font-size: 20px;
-    text-align: center;
-    margin:auto;
-    width:10%;
-    display:inline-block;
-    position:relative;
-    left:39%;
-    border-radius:10px;
-    cursor:pointer;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	margin:auto;
+	width:10%;
+	display:inline-block;
+	position:relative;
+	left:39%;
+	border-radius:10px;
+	cursor:pointer;
     
     
-    animation-name:fadeup;
-    animation-duration:1s;
-    animation-timing-function: ease-out;
+	animation-name:fadeup;
+	animation-duration:1s;
+	animation-timing-function: ease-out;
     
-    transition: background-color 0.5s
+	transition: background-color 0.5s
 }
 
 .button:hover {
-    background-color:rgba(50, 50, 50, 0.8);
+	background-color:rgba(50, 50, 50, 0.8);
 }
 
 a {
-    text-decoration:none;
-    color:white;
-    display:block;
-    margin:0px;
+	text-decoration:none;
+	color:white;
+	display:block;
+	margin:0px;
 }
 a:visited {
-    text-decoration:none;
+	text-decoration:none;
 }
 
 ul.menubar{
-    border-width:1px;
-    border-color:white;
-    list-style-type: none;
-    overflow: hidden;
-    background-color: rgba(60, 60, 60, 0.6);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding:0px;
-    animation-name:fadeleft;
-    animation-duration:1s;
-    animation-timing-function: ease-out;
+	border-width:1px;
+	border-color:white;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: rgba(60, 60, 60, 0.6);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding:0px;
+	animation-name:fadeleft;
+	animation-duration:1s;
+	animation-timing-function: ease-out;
 }
 
 .menubox {
-    width:40%;
-    margin-left:auto;
-    margin-right:auto;
-/*     border:solid;border-color:white; */
+	width:40%;
+	margin-left:auto;
+	margin-right:auto;
+/* 	border:solid;border-color:white; */
 }
 li.menubar {
-    font-family: Arial;
-    font-size: 20px;
-    display: inline-block;
-    padding-top: 5px;
-    padding-bottom:5px;
-    width:32.7%;
-    text-align:center;
-    margin:0;
-    transition: background-color 0.5s;
-    float:left;
+	font-family: Arial;
+	font-size: 20px;
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom:5px;
+	width:32.7%;
+	text-align:center;
+	margin:0;
+	transition: background-color 0.5s;
+	float:left;
 
 }
 
 li.menubar:hover {
-/*     background-color: rgba(20, 20, 20, 0.8); */
-    background-color: rgba(0,191,255, 0.7);
+/* 	background-color: rgba(20, 20, 20, 0.8); */
+	background-color: rgba(0,191,255, 0.7);
 }
 
 
 
 
 
+/* Ainslans CSS
+
+*
+*
+*
+
+*/
+
+.formError {
+	color:red;
+	font-weight: bolder;
+}
+
+
+.listStatus {
+	width:30%;
+	background-color: green;
+}
+.complete {
+	background-color: green;
+}
+.incomplete {
+	background-color: red;
+}
+
+#listOfLists table {
+	width:100%;
+}
+#listOfLists table div{
+	width:100%;
+}
+
+#listOfLists table td {
+	height:1px;
+}
+
+h2:hover,.remove:hover {
+	background-color: rgba(0,191,255, 0.7);
+}

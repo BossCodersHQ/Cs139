@@ -1,7 +1,7 @@
 
-INSERT INTO user VALUES(NULL,"user1","user1mail@testmail.co.uk","password1","user","one");
-INSERT INTO user VALUES(NULL,"user2","user2mail@testmail.co.uk","password2","user","two");
-INSERT INTO user VALUES(NULL,"user3","user3mail@testmail.co.uk","password3","user","three");
+INSERT INTO user VALUES(NULL,"user1","user1mail@testmail.co.uk","password1","user","one","fakesalt");
+INSERT INTO user VALUES(NULL,"user2","user2mail@testmail.co.uk","password2","user","two","fakesalt");
+INSERT INTO user VALUES(NULL,"user3","user3mail@testmail.co.uk","password3","user","three","fakesalt");
 
 INSERT INTO friendship VALUES(NULL,1,2);
 INSERT INTO friendship VALUES(NULL,2,1);

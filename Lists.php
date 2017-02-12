@@ -1,5 +1,7 @@
 <?php 
-	include("scripts/loadlists.php");
+ini_set("display_errors", 1);
+error_reporting(E_ALL);
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +23,7 @@
     <div class="menubox">
     <li class="menubar"><a href="index.html">Home</a></li>
     <li class="menubar" style="background-color: rgba(20, 20, 20, 0.8);"><a href="">Lists</a></li>
-    <li class="menubar"><a href="Friends.html">Friends</a></li>
+    <li class="menubar"><a href="scripts/logout.php">Logout <?php echo $_SESSION['Firstname'] ?></a></li>
     </div>
 </ul>
 
@@ -30,12 +32,12 @@
 <div class="lists">
   <div class="listbutton" id="addList"><h2>Add new List</h2></div>
   <input type="text" id="addListName" style="display:none; width:80%;">
+  <div id="listOfLists"></div>
 </div>
 </div>
-<div id ="middle" class="bar" style="background-color:white;color:black">ssdgdsgdsg
+<div id ="middle" class="bar" style="background-color:rgba(60, 60, 60, 0.6);color:black">ssdgdsgdsg
 </div>
-<div id ="right" class="bar" style="background-color:green;color:black">ssdgdsgdsgsd
-</div>
+
 
 </body>
 </html>

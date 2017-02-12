@@ -2,11 +2,12 @@ drop table user;
 
 CREATE TABLE user(
 userID   integer primary key,
-username VARCHAR(20), 
-email    VARCHAR(40) not null,
+username VARCHAR(20) not null UNIQUE, 
+email    VARCHAR(40) not null UNIQUE,
 password VARCHAR(70) not null,
 forename VARCHAR(25) not null,
-surname  VARCHAR(25) not null
+surname  VARCHAR(25) not null,
+salt     VARCHAR(10) not null
 );
 
 drop table friendship;

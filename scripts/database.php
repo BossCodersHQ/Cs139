@@ -33,9 +33,9 @@ class Database {
 		return $this->database->escapeString($string);
 	}
 	
-	function bindValue() {
-
-	}
+	function lastInsertRowID() {
+ 		return $this->database->lastInsertRowID();
+	}  
 	private function getConnection() {
 		$conn = new SQLite3(realpath(__DIR__ . '/../todo.db'));
 		return $conn;
