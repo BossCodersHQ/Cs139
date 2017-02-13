@@ -21,8 +21,6 @@ session_start();
 <br>
 <ul class ="menubar">
     <div class="menubox">
-    <li class="menubar"><a href="index.html">Home</a></li>
-    <li class="menubar" style="background-color: rgba(20, 20, 20, 0.8);"><a href="">Lists</a></li>
     <li class="menubar"><a href="scripts/logout.php">Logout <?php echo $_SESSION['Firstname'] ?></a></li>
     </div>
 </ul>

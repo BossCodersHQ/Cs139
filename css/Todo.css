@@ -330,18 +330,19 @@ h2:hover,.remove:hover {
 	display:none;
 }
 .eachItem {
-	height:80px;
+	min-height:80px;
 }
 
 .itemInfo {
 	width:30%;
-	height: 100%;
+	min-height: 80px;
 	display:inline-block;
+	box-sizing: border-box;
+	padding: 10px;
 }
 
 .itemBody {
 	width:70%;
-	height:100%;
 	display:inline-block;
 	color: white;
 	font-weight: bold;
@@ -349,9 +350,36 @@ h2:hover,.remove:hover {
 	background-color: rgba(190,191,255, 0.65);
 	box-sizing: border-box;
 	padding: 10px;
-	font-size: 18px;
+	font-size: 1em;
+	font-family:sans-serif;
+}
+.itemInfo h3 {
+	color: white;
+	font-weight: bold;
+	font-size:1em;
+	text-align: center;
+	font-family:sans-serif;
+	width: 100%;
+	word-wrap:break-word;
 }
 
+.incompleteItemButton,.completeItemButton,.deleteItemButton {
+	padding: 3px;
+    background-color: rgba(200,200,100, 0.65);
+    text-align:center;
+    display: inline-block;
+}
+
+.deleteItemButton {
+	margin-left: 10px;
+}
+.deleteItemButton:hover {
+    background-color: rgba(200,100,100, 0.65);		
+}
+
+.incompleteItemButton:hover {
+    background-color: rgba(100,200,100, 0.65);	
+}
 .notCompletedItem {
 		background-color: rgba(200,100,100, 0.65);
 }

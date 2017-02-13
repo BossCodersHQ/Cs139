@@ -17,7 +17,7 @@ error_reporting(E_ALL);
 			$completed = "<td class='listStatus complete'></td>";
 			$isCompleted = "complete";			
 		}
-		$htmlResponse .= "<tr><td><div class='listTitle ".$isCompleted."'><div id=list_".$row["listID"]."><h2>".$row["title"]."</h2></div></div></td><td class='remove' id='".$row["listID"]."'>remove</div></tr>";
+		$htmlResponse .= "<tr><td><div class='listTitle ".$isCompleted."'><div id=list_".$row["listID"]."><h2>".htmlspecialchars($row["title"], ENT_QUOTES, 'utf-8')."</h2></div></div></td><td class='remove' id='".$row["listID"]."'>remove</div></tr>";
 	}
 	echo $htmlResponse."</table>";
 
