@@ -8,7 +8,7 @@ session_start();
 <head>
 <meta charset="UTF-8">
 <title>cs139</title>
-<link rel="stylesheet" type="text/css" href="css/Todo.css" />
+<link rel="stylesheet" type="text/css" href="css/Todo.css?1.1" />
 <script src="Jquery/jquery-3.1.1.js"></script>
 <script src="scripts/general.js"></script>
 </head>
@@ -31,11 +31,20 @@ session_start();
 <div id ="left" class="bar">
 <div class="lists">
   <div class="listbutton" id="addList"><h2>Add new List</h2></div>
-  <input type="text" id="addListName" style="display:none; width:80%;">
+  <input type="text" id="addListName" placeholder="list name (20 chars)" style="display:none; width:80%;">
   <div id="listOfLists"></div>
 </div>
 </div>
-<div id ="middle" class="bar" style="background-color:rgba(60, 60, 60, 0.6);color:black">ssdgdsgdsg
+
+<div id ="middle" class="bar" style="background-color:rgba(60, 60, 60, 0.6);color:black">
+<div class="itemBlock" id="listTitle">
+	<div id="addListItem"><h2>Add a new List Item</h2></div>
+	<div id="listItemForm">
+	<label>Name</label><div class="inputHolder"><input type="text" placeholder="Item name (20 chars)"></div>
+	<label>Write The todo text here:</label><div class="inputHolder"><textarea name="itemText" placeholder="Item text"cols="40" rows="5"></textarea></div>
+	</div>
+
+</div>
 </div>
 
 

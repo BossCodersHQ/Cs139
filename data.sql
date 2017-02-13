@@ -14,11 +14,11 @@ INSERT INTO list VALUES(NULL,"List1",strftime('%s','now')-5000,strftime('%s','no
 INSERT INTO list VALUES(NULL,"List2",strftime('%s','now')-5500,strftime('%s','now'));
 INSERT INTO list VALUES(NULL,"List3",strftime('%s','now')-6000,NULL);
 
-INSERT INTO listItem VALUES(NULL,1,strftime('%s','now')-5000,strftime('%s','now'),"Completed List item");
-INSERT INTO listItem VALUES(NULL,1,strftime('%s','now')-5000,NULL,"First Incomplete List item");
-INSERT INTO listItem VALUES(NULL,1,strftime('%s','now')-6000,NULL,"Second Incomplete List item");
-INSERT INTO listItem VALUES(NULL,2,strftime('%s','now')-5000,strftime('%s','now'),"Completed List item second list");
-INSERT INTO listItem VALUES(NULL,2,strftime('%s','now')-5000,NULL,"First Incomplete List item second list");
+INSERT INTO listItem VALUES(NULL,1,strftime('%s','now')-5000,strftime('%s','now'),"label", "Completed List item");
+INSERT INTO listItem VALUES(NULL,1,strftime('%s','now')-5000,NULL,"label", "First Incomplete List item");
+INSERT INTO listItem VALUES(NULL,1,strftime('%s','now')-6000,NULL,"label", "Second Incomplete List item");
+INSERT INTO listItem VALUES(NULL,2,strftime('%s','now')-5000,strftime('%s','now'),"label", "Completed List item second list");
+INSERT INTO listItem VALUES(NULL,2,strftime('%s','now')-5000,NULL,"label", "First Incomplete List item second list");
 
 
 INSERT INTO userList VALUES(1,1,1);

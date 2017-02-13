@@ -23,7 +23,7 @@ drop table list;
 
 CREATE TABLE list(
 listID   integer primary key,
-title VARCHAR(30),
+title VARCHAR(20),
 creation integer,
 completion integer                                                                                                                    
 );
@@ -37,6 +37,7 @@ itemID integer primary key,
 listID integer,
 creation integer, 
 completion integer,
+label VARCHAR(20),
 itemText text
 );
 

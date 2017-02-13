@@ -121,7 +121,7 @@ h2 {
     
 }
 #middle.bar{
-	width:60%;
+	width:65%;
 }
 
 .listTitle {
@@ -249,10 +249,10 @@ li.menubar:hover {
 	background-color: green;
 }
 .complete {
-	background-color: green;
+	background-color: rgba(100,200,100, 0.65);
 }
 .incomplete {
-	background-color: red;
+	background-color: rgba(200,100,100, 0.65);
 }
 
 #listOfLists table {
@@ -268,4 +268,94 @@ li.menubar:hover {
 
 h2:hover,.remove:hover {
 	background-color: rgba(0,191,255, 0.7);
+}
+
+#middle.bar {
+	height: 85vh;
+	padding-top: 20px;
+	overflow-y: scroll;
+}
+#middle::-webkit-scrollbar { 
+    display: none; 
+}
+.itemBlock {
+	display: block;
+	width:80%;
+	background-color: rgba(190,191,255, 0.7);
+	margin:auto;
+	margin-top:10px;
+	padding:5px;
+	box-sizing: border-box;
+}
+.itemBlock h2 {
+	text-align: center;
+
+}
+.itemBlock textarea {
+	margin: auto;
+	margin-top: 5px;
+	width:80%;
+	display:inline-block;
+}
+.itemBlock input[type="text"] {
+	margin: auto;
+	display:inline-block;
+	width:80%;
+}
+.itemBlock label {
+	text-align: center;
+	display:inline-block;
+	width: 30%;
+}
+
+.inputHolder {
+	width:70%;
+	display: inline-block;
+	text-align: center;
+}
+
+#listItemForm {
+	display:none;
+}
+
+#addListItem {
+	margin-bottom: 5px;
+}
+
+.active {
+	background-color: hotpink;
+	font-weight:bold;
+}
+.itemBlock {
+	display:none;
+}
+.eachItem {
+	height:80px;
+}
+
+.itemInfo {
+	width:30%;
+	height: 100%;
+	display:inline-block;
+}
+
+.itemBody {
+	width:70%;
+	height:100%;
+	display:inline-block;
+	color: white;
+	font-weight: bold;
+	vertical-align: top;
+	background-color: rgba(190,191,255, 0.65);
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.notCompletedItem {
+		background-color: rgba(200,100,100, 0.65);
+}
+
+.completedItem {
+		background-color: rgba(100,200,100, 0.65);
 }
