@@ -12,7 +12,7 @@ $error = '';
 $accept = true;
 //sets the posted values into these variables, while removing whitespace before and after the text
 if (isset($_POST['Register'])) {
-  $showSignIn = 'myFunction2()';
+  $showSignIn = 'myFunction2();';
 
   $Username = trim($_POST['Username']);
   $Password = trim($_POST['Password']);
@@ -76,6 +76,8 @@ if (isset($_POST['Register']) && $accept) {
   $stmt->bindParam(':Salt',$salt,SQLITE3_TEXT);
 
   $stmt->execute();
+} else {
+    $showSignIn = 'myFunction();';
 }
 
 
